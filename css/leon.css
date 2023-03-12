@@ -342,3 +342,36 @@ body{
     margin-bottom: 0;
 }
 /* End Portfolio */
+/* Start about */
+.about{
+    padding: 60px 0;
+    background-color: #f6f6f6;
+}
+
+.about .about-content{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about .about-content .image{
+    position: relative;
+    width: 250px;
+    height: 375px;
+}
+.about .about-content .image img{
+    width: 250px;
+    height: 375px;
+}
+.about .about-content .image::before{
+    content: '';
+    position: absolute;
+    background-color: rgb(255, 0, 0);
+    width: 120px;
+    height: calc(100% + 80px);
+    top: -40px;
+    left: -20px;
+    z-index: -1;
+}
+
+/* End about */
